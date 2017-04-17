@@ -1,0 +1,168 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/defunctzombie/sequelize-encrypted"
+
+    >sequelize-encrypted (v1.0.0)</a>
+</h1>
+<h4>encrypted sequelize fields</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-encrypted">module sequelize-encrypted</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-encrypted.sequelize-encrypted">
+            function <span class="apidocSignatureSpan"></span>sequelize-encrypted
+            <span class="apidocSignatureSpan">(Sequelize, key, opt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-encrypted.toString">
+            function <span class="apidocSignatureSpan">sequelize-encrypted.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sequelize-encrypted.toString">module sequelize-encrypted.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sequelize-encrypted.toString.toString">
+            function <span class="apidocSignatureSpan">sequelize-encrypted.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-encrypted" id="apidoc.module.sequelize-encrypted">module sequelize-encrypted</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-encrypted.sequelize-encrypted" id="apidoc.element.sequelize-encrypted.sequelize-encrypted">
+        function <span class="apidocSignatureSpan"></span>sequelize-encrypted
+        <span class="apidocSignatureSpan">(Sequelize, key, opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EncryptedField(Sequelize, key, opt) {
+    if (!(this instanceof EncryptedField)) {
+        return new EncryptedField(Sequelize, key, opt);
+    }
+
+    var self = this;
+    self.key = new Buffer(key, &#x27;hex&#x27;);
+    self.Sequelize = Sequelize;
+
+    opt = opt || {};
+    self._algorithm = opt.algorithm || &#x27;aes-256-cbc&#x27;;
+    self._iv_length = opt.iv_length || 16;
+    self.encrypted_field_name = undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-encrypted.toString" id="apidoc.element.sequelize-encrypted.toString">
+        function <span class="apidocSignatureSpan">sequelize-encrypted.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sequelize-encrypted.toString" id="apidoc.module.sequelize-encrypted.toString">module sequelize-encrypted.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sequelize-encrypted.toString.toString" id="apidoc.element.sequelize-encrypted.toString.toString">
+        function <span class="apidocSignatureSpan">sequelize-encrypted.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
