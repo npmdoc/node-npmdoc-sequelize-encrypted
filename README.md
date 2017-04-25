@@ -1,4 +1,7 @@
-# api documentation for  [sequelize-encrypted (v1.0.0)](https://github.com/defunctzombie/sequelize-encrypted)  [![npm package](https://img.shields.io/npm/v/npmdoc-sequelize-encrypted.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sequelize-encrypted) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sequelize-encrypted.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sequelize-encrypted)
+# npmdoc-sequelize-encrypted
+
+#### basic api documentation for  [sequelize-encrypted (v1.0.0)](https://github.com/defunctzombie/sequelize-encrypted)  [![npm package](https://img.shields.io/npm/v/npmdoc-sequelize-encrypted.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sequelize-encrypted) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sequelize-encrypted.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sequelize-encrypted)
+
 #### encrypted sequelize fields
 
 [![NPM](https://nodei.co/npm/sequelize-encrypted.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sequelize-encrypted)
@@ -63,7 +66,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
